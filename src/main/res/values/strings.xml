@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">WellRelax</string>
+
+    <string name="one">&#xe61c;</string>
+    <string name="two">&#xe75b;</string>
+    <string name="three">&#xea99;</string>
+    <string name="four">&#xe62d;</string>
+    <string name="five">&#xe620;</string>
+    <string name="six">&#xe635;</string>
+    <string name="seven">&#xe601;</string>
+    <string name="eight">&#xe7d2;</string>
+    <string name="nine">&#xe605;</string>
+    <string name="ten">&#xe600;</string>
+    <string name="eleven">&#xe61e;</string>
+    <string name="twelve">&#xe680;</string>
+    <string name="thirteen">&#xe63b;</string>
+    <string name="fourteen">&#xe66a;</string>
+
+    <string name="yi">&#xe622;</string>
+    <string name="er">&#xe70a;</string>
+    <string name="san">&#xe62f;</string>
+    <string name="si">&#xe630;</string>
+    <string name="wu">&#xe69b;</string>
+    <string name="liu">&#xe69c;</string>
+    <string name="qi">&#xe62c;</string>
+    <string name="ba">&#xe69e;</string>
+    <string name="jiu">&#xe62a;</string>
+    <string name="ling">&#xe621;</string>
+    <string name="maohao">&#xe603;</string>
+
+    <string name="play">&#xe6ec;</string>
+    <string name="pause">&#xe788;</string>
+    <string name="timer">&#xe602;</string>
+    <string name="favorites">&#xe616;</string>
+</resources>

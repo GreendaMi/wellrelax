@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:seek="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/gray"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <UI.Seek
+            android:id="@+id/seek_one"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/one"
+            android:padding="5dp"
+            seek:active="#ffffff"
+            >
+
+            <UI.IconFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/one"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/iconsize"
+                />
+        </UI.Seek>
+
+        <UI.Seek
+            android:id="@+id/seek_two"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/two"
+            seek:active="#ffffff"
+            >
+
+            <UI.IconFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/two"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/iconsize"/>
+        </UI.Seek>
+
+        <UI.Seek
+            android:id="@+id/seek_three"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/three"
+            seek:active="#ffffff"
+            >
+
+            <UI.IconFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/three"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/iconsize"/>
+        </UI.Seek>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <UI.Seek
+            android:id="@+id/seek_four"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/four"
+            seek:active="#ffffff"
+            >
+
+            <UI.IconFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/four"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/iconsize"/>
+        </UI.Seek>
+
+        <UI.Seek
+            android:id="@+id/seek_five"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/five"
+            seek:active="#ffffff"
+            >
+
+            <UI.IconFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/five"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/iconsize"/>
+        </UI.Seek>
+
+        <UI.Seek
+            android:id="@+id/seek_six"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/six"
+            seek:active="#ffffff"
+            >
+
+            <UI.IconFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/six"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/iconsize"/>
+        </UI.Seek>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <UI.Seek
+            android:id="@+id/seek_seven"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/seven"
+            seek:active="#ffffff"
+            >
+
+            <UI.IconFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/seven"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/iconsize"/>
+        </UI.Seek>
+
+        <UI.Seek
+            android:id="@+id/seek_eight"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/eight"
+            seek:active="#ffffff"
+            >
+
+            <UI.IconFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/eight"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/iconsize"/>
+        </UI.Seek>
+
+        <UI.Seek
+            android:id="@+id/seek_nine"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/nine"
+            seek:active="#ffffff"
+            >
+
+            <UI.IconFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/nine"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/iconsize"/>
+        </UI.Seek>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <UI.Seek
+            android:id="@+id/seek_ten"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/ten"
+            seek:active="#ffffff"
+            >
+
+            <UI.IconFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/ten"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/iconsize"/>
+        </UI.Seek>
+
+        <UI.Seek
+            android:id="@+id/seek_eleven"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/eleven"
+            seek:active="#ffffff"
+            >
+
+            <UI.IconFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/eleven"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/iconsize"/>
+        </UI.Seek>
+
+        <UI.Seek
+            android:id="@+id/seek_twelve"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/twelve"
+            seek:active="#ffffff"
+            >
+
+            <UI.IconFontTextView
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/twelve"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/iconsize"/>
+        </UI.Seek>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <UI.Seek
+            android:id="@+id/seek_thirteen"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/thirteen"
+            seek:active="#ffffff"
+            >
+
+            <UI.IconFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/thirteen"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/iconsize"/>
+        </UI.Seek>
+
+        <UI.Seek
+            android:id="@+id/seek_fourteen"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/fourteen"
+            seek:active="#ffffff"
+            >
+
+            <UI.IconFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/fourteen"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/iconsize"/>
+        </UI.Seek>
+
+        <UI.Seek
+            android:id="@+id/seek_favorites"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/fifteen"
+            seek:active="#ffffff"
+            >
+
+            <UI.IconFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/favorites"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/iconsize"/>
+        </UI.Seek>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <UI.IconFontTextView
+            android:id="@+id/play"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/pause"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/iconsize_button"/>
+        <View
+            android:layout_width="2dp"
+            android:layout_height="50dp"
+            android:background="@color/fourteen"></View>
+        <UI.IconFontTextView
+            android:id="@+id/timer"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/timer"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/iconsize_button"/>
+    </LinearLayout>
+</LinearLayout>
