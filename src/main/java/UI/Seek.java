@@ -194,8 +194,10 @@ public class Seek extends ViewGroup {
             //此处有触屏优化
             if(current > 300){
                 mOnSeekChangeLisner.onChange(0);
+                current = 0;
             }else if(current > 180){
                 mOnSeekChangeLisner.onChange(100);
+                current = 180;
             }else{
                 mOnSeekChangeLisner.onChange((int)(current/1.8));
             }
