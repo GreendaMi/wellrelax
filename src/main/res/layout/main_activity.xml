@@ -295,13 +295,13 @@
                 android:textSize="@dimen/iconsize"/>
         </UI.Seek>
 
-        <UI.Seek
+        <LinearLayout
             android:id="@+id/seek_favorites"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@color/fifteen"
-            seek:active="#ffffff"
+            android:gravity="center"
             >
 
             <UI.IconFontTextView
@@ -311,12 +311,26 @@
                 android:text="@string/favorites"
                 android:textColor="#ffffff"
                 android:textSize="@dimen/iconsize"/>
-        </UI.Seek>
+        </LinearLayout>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="horizontal">
+        <UI.IconFontTextView
+            android:id="@+id/add"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="+"
+            android:textColor="#ffffff"
+            android:textSize="44dp"/>
+        <View
+            android:layout_width="2dp"
+            android:layout_height="50dp"
+            android:background="@color/fourteen"></View>
         <UI.IconFontTextView
             android:id="@+id/play"
             android:layout_gravity="center"

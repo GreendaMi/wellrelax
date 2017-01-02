@@ -11,21 +11,17 @@ import android.view.Window;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 
+import com.greendami.wellrelax.Main;
 import com.greendami.wellrelax.R;
-
-import org.greenrobot.eventbus.EventBus;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import Adapter.BaseAdapter;
 import Adapter.ViewHolder;
-import Event.ShowTimeEvent;
 import UI.IconFontTextView;
-import business.DecSecond;
 import business.TimeStringConVert;
 import business.Timer.TickTimer;
-import business.Timer.TimeSpan;
 
 /**
  * Created by GreendaMi on 2016/11/26.
@@ -61,7 +57,7 @@ public class DialogControl {
                     @Override
                     public void onClick(View view) {
 
-                        controlTimeView(mShowTimes.get(position));
+                        ((Main)(mContext)).controlTimeView(mShowTimes.get(position));
                         Dismiss();
                     }
                 });
@@ -79,30 +75,30 @@ public class DialogControl {
         mDialog.dismiss();
     }
 
-    /**
-     * 控制计时器倒计时
-     * @param startTime
-     */
-    public void controlTimeView(final String startTime){
-
-
-
-        timer = new TickTimer(TimeSpan.fromSeconds(1f), new Runnable() {
-            String mTime = startTime;
-            @Override
-            public void run() {
-
-                if(!mTime.equals("00:00:00") && !mTime.equals(mContext.getResources().getString(R.string.timer))){
-                    mTime =  DecSecond.DecOneSecond(mTime);
-                }else{
-                    mTime = mContext.getResources().getString(R.string.timer);
-                }
-
-                EventBus.getDefault().post(new ShowTimeEvent(mTime));//发布事件
-            }
-        });
-
-    }
+//    /**
+//     * 控制计时器倒计时
+//     * @param startTime
+//     */
+//    public void controlTimeView(final String startTime){
+//
+//
+//
+//        timer = new TickTimer(TimeSpan.fromSeconds(1f), new Runnable() {
+//            String mTime = startTime;
+//            @Override
+//            public void run() {
+//
+//                if(!mTime.equals("00:00:00") && !mTime.equals(mContext.getResources().getString(R.string.timer))){
+//                    mTime =  DecSecond.DecOneSecond(mTime);
+//                }else{
+//                    mTime = mContext.getResources().getString(R.string.timer);
+//                }
+//
+//                EventBus.getDefault().post(new ShowTimeEvent(mTime));//发布事件
+//            }
+//        });
+//
+//    }
 
     public void Show(){
         mDialog.show();

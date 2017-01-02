@@ -1,5 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.greendami.wellrelax">
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
 
     <application android:allowBackup="true"
                  android:icon="@mipmap/logo"
@@ -7,15 +9,16 @@
                  android:supportsRtl="true"
                  android:theme="@style/AppTheme">
 
-        <activity android:name=".Main">
-            android:configChanges="keyboardHidden|orientation"
+        <activity android:name=".Main"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustResize|adjustUnspecified|stateHidden"
+            android:launchMode="singleTop">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ChooseSaved"/>
 
     </application>
 

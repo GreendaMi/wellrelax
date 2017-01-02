@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <UI.Rainbow
+        android:layout_margin="5dp"
+        android:id="@+id/rainbow"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff">
+
+    </UI.Rainbow>
+    <ImageView
+        android:id="@+id/delete"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@mipmap/closed"
+        />
+</RelativeLayout>
