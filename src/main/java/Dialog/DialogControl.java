@@ -10,8 +10,9 @@ import android.view.View;
 import android.view.Window;
 import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.TextView;
 
-import com.greendami.wellrelax.Main;
+import com.greendami.wellrelax.Main2;
 import com.greendami.wellrelax.R;
 
 import java.util.ArrayList;
@@ -19,7 +20,6 @@ import java.util.List;
 
 import Adapter.BaseAdapter;
 import Adapter.ViewHolder;
-import UI.IconFontTextView;
 import business.TimeStringConVert;
 import business.Timer.TickTimer;
 
@@ -33,11 +33,11 @@ public class DialogControl {
     Context mContext;
     List<String> mDatas ;
     List<String> mShowTimes ;
-    IconFontTextView mIconFontTextView;
+    TextView mIconFontTextView;
     TickTimer timer;
     Handler mHandler;
 
-    public void initDialog(Context context, IconFontTextView iconFontTextView) {
+    public void initDialog(Context context, TextView iconFontTextView) {
         mContext = context;
         mIconFontTextView = iconFontTextView;
         mDialog = new AlertDialog.Builder(context).create();
@@ -57,7 +57,7 @@ public class DialogControl {
                     @Override
                     public void onClick(View view) {
 
-                        ((Main)(mContext)).controlTimeView(mShowTimes.get(position));
+                        ((Main2)(mContext)).controlTimeView(mShowTimes.get(position));
                         Dismiss();
                     }
                 });
@@ -149,10 +149,10 @@ public class DialogControl {
         mShowTimes.add("02:00:00");
         mShowTimes.add("04:00:00");
         mShowTimes.add("08:00:00");
-        Log.d("DialogControl", TimeStringConVert.getTimeString(mContext, "08:00:00"));
         List<String> temp = new ArrayList<>();
         for (String s:mDatas) {
-            temp.add(TimeStringConVert.getTimeString(mContext,s));
+//            temp.add(TimeStringConVert.getTimeString(mContext,s));
+            temp.add(s);
             Log.d("DialogControl", TimeStringConVert.getTimeString(mContext, s));
         }
 

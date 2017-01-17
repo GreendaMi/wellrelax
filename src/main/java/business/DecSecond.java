@@ -17,7 +17,7 @@ public class DecSecond {
         }
 
         if(m < 0){
-            m = 23;
+            m = 59;
             h = h - 1;
         }
 

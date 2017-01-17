@@ -4,7 +4,7 @@
               android:layout_width="match_parent"
               android:layout_height="50dp">
 
-    <UI.IconFontTextView
+    <UI.CHTextView
         android:layout_gravity="center"
         android:gravity="center"
         android:id="@+id/timetext"
@@ -12,6 +12,6 @@
         android:layout_height="match_parent"
         android:background="#888888"
         android:textColor="#ffffff"
-        android:textSize="30sp"/>
+        android:textSize="24sp"/>
 
 </LinearLayout>

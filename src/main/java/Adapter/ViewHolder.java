@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 
 /**
@@ -117,7 +118,7 @@ public class ViewHolder {
      */
     public ViewHolder setText(int viewId, String text)
     {
-        UI.IconFontTextView view = getView(viewId);
+        TextView view = getView(viewId);
         view.setText(text);
         return this;
     }

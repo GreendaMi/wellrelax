@@ -364,9 +364,9 @@ public class Main extends Activity {
         //可以点击通知栏的删除按钮删除
         builder.setAutoCancel(false);
         //系统状态栏显示的小图标
-        builder.setSmallIcon(R.mipmap.logo);
+        builder.setSmallIcon(R.mipmap.logo2);
         //下拉显示的大图标
-        builder.setLargeIcon(BitmapFactory.decodeResource(getResources(), R.mipmap.logo));
+        builder.setLargeIcon(BitmapFactory.decodeResource(getResources(), R.mipmap.logo2));
         Intent intent = new Intent(this, Main.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
         PendingIntent pIntent = PendingIntent.getActivity(Main.this, 1, intent, 0);
@@ -400,6 +400,9 @@ public class Main extends Activity {
     public void controlTimeView(final String startTime) {
 
 
+        if(timer != null && timer.isRunning()){
+            timer.stop();
+        }
         timer = new TickTimer(TimeSpan.fromSeconds(1f), new Runnable() {
             String mTime = startTime;
 
