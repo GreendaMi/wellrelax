@@ -11,6 +11,8 @@ A white noise Android App
 
 ![20161128-2.png](http://greendami.top/img/20161128-2.png "")
 
-[APK安装包](http://greendami.top/img/wellrelax.apk "")
+百度上架：http://shouji.baidu.com/software/10780236.html
 
-代码未经过完全测试，如有Bug请联系：zpybless@163.com  同时寻找帝都工作机会！
+[APK安装包](http://dl.coolapkmarket.com/down/apk_upload/2017/0119/wellrelax-release-for-126195-o_1b6qdg3mv1u6r93k114d15fnl68q-uid-756105.apk?_upt=2b499e731484800892 "")
+
+
