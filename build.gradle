@@ -8,8 +8,8 @@ android {
         applicationId "com.greendami.wellrelax"
         minSdkVersion 19
         targetSdkVersion 25
-        versionCode 2
-        versionName "1.1"
+        versionCode 6
+        versionName "1.5.1"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
@@ -33,4 +33,5 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.0.1'
     compile 'org.greenrobot:eventbus:3.0.0'
     compile 'com.android.support:recyclerview-v7:25.1.0'
+//    compile 'com.github.traex.rippleeffect:library:1.3'
 }
